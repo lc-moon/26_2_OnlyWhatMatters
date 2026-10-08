@@ -1,0 +1,39 @@
+# 비밀 정보 — API 키, GitHub App 개인 키
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 내려받은 OSV 원본 등 재생성 가능한 데이터
+data/
+
+# 실습일지 제출본·양식 — 학번·이름이 들어간다 (원고 *.md 는 커밋 대상)
+docs/실습일지/*.docx
+~$*.docx
+
+# 주의: eval/(사람이 만든 정답 데이터)은 커밋 대상이다. 여기에 추가하지 말 것
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# 도구 캐시
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.cache
+.cache/
+
+# 에디터·OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
